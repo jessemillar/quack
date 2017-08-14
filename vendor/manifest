@@ -1,0 +1,115 @@
+{
+	"version": 0,
+	"dependencies": [
+		{
+			"importpath": "github.com/dgrijalva/jwt-go",
+			"repository": "https://github.com/dgrijalva/jwt-go",
+			"vcs": "git",
+			"revision": "a539ee1a749a2b895533f979515ac7e6e0f5b650",
+			"branch": "master",
+			"notests": true
+		},
+		{
+			"importpath": "github.com/jessemillar/health",
+			"repository": "https://github.com/jessemillar/health",
+			"vcs": "git",
+			"revision": "f5140c4f83d54deeb5d0d21fa55ae9b7b1a1f663",
+			"branch": "HEAD",
+			"notests": true
+		},
+		{
+			"importpath": "github.com/jessemillar/jsonresp",
+			"repository": "https://github.com/jessemillar/jsonresp",
+			"vcs": "git",
+			"revision": "f6268670ca1a1b59f4e6503eb55e273576877eaf",
+			"branch": "HEAD",
+			"notests": true
+		},
+		{
+			"importpath": "github.com/labstack/echo",
+			"repository": "https://github.com/labstack/echo",
+			"vcs": "git",
+			"revision": "935a60782cbbc55110e7bd4b33120e4567cbee43",
+			"branch": "HEAD",
+			"notests": true
+		},
+		{
+			"importpath": "github.com/labstack/gommon/bytes",
+			"repository": "https://github.com/labstack/gommon",
+			"vcs": "git",
+			"revision": "779b8a8b9850a97acba6a3fe20feb628c39e17c1",
+			"branch": "master",
+			"path": "bytes",
+			"notests": true
+		},
+		{
+			"importpath": "github.com/labstack/gommon/color",
+			"repository": "https://github.com/labstack/gommon",
+			"vcs": "git",
+			"revision": "779b8a8b9850a97acba6a3fe20feb628c39e17c1",
+			"branch": "master",
+			"path": "color",
+			"notests": true
+		},
+		{
+			"importpath": "github.com/labstack/gommon/log",
+			"repository": "https://github.com/labstack/gommon",
+			"vcs": "git",
+			"revision": "779b8a8b9850a97acba6a3fe20feb628c39e17c1",
+			"branch": "master",
+			"path": "/log",
+			"notests": true
+		},
+		{
+			"importpath": "github.com/labstack/gommon/random",
+			"repository": "https://github.com/labstack/gommon",
+			"vcs": "git",
+			"revision": "779b8a8b9850a97acba6a3fe20feb628c39e17c1",
+			"branch": "master",
+			"path": "random",
+			"notests": true
+		},
+		{
+			"importpath": "github.com/mattn/go-colorable",
+			"repository": "https://github.com/mattn/go-colorable",
+			"vcs": "git",
+			"revision": "6df6d4d004b64986bbb0d1b25945f42b44787e90",
+			"branch": "master",
+			"notests": true
+		},
+		{
+			"importpath": "github.com/mattn/go-isatty",
+			"repository": "https://github.com/mattn/go-isatty",
+			"vcs": "git",
+			"revision": "fc9e8d8ef48496124e79ae0df75490096eccf6fe",
+			"branch": "master",
+			"notests": true
+		},
+		{
+			"importpath": "github.com/valyala/fasttemplate",
+			"repository": "https://github.com/valyala/fasttemplate",
+			"vcs": "git",
+			"revision": "dcecefd839c4193db0d35b88ec65b4c12d360ab0",
+			"branch": "master",
+			"notests": true
+		},
+		{
+			"importpath": "golang.org/x/crypto/acme",
+			"repository": "https://go.googlesource.com/crypto",
+			"vcs": "git",
+			"revision": "b176d7def5d71bdd214203491f89843ed217f420",
+			"branch": "master",
+			"path": "acme",
+			"notests": true
+		},
+		{
+			"importpath": "golang.org/x/sys/unix",
+			"repository": "https://go.googlesource.com/sys",
+			"vcs": "git",
+			"revision": "2d3e384235de683634e9080b58f757466840aa48",
+			"branch": "master",
+			"path": "/unix",
+			"notests": true
+		}
+	]
+}
