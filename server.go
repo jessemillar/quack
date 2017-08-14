@@ -21,7 +21,11 @@ func main() {
 
 	router.GET("/", echo.WrapHandler(http.HandlerFunc(quack.Quack)))
 	router.GET("/health", echo.WrapHandler(http.HandlerFunc(health.Check)))
+
 	router.GET("/quack", echo.WrapHandler(http.HandlerFunc(quack.Quack)))
+	router.POST("/quack", echo.WrapHandler(http.HandlerFunc(quack.Quack)))
+	router.PUT("/quack", echo.WrapHandler(http.HandlerFunc(quack.Quack)))
+	router.DELETE("/quack", echo.WrapHandler(http.HandlerFunc(quack.Quack)))
 
 	log.Printf("Listening on HTTP port: %s\n", *port)
 
