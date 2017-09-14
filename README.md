@@ -12,7 +12,7 @@ usage: quack [<flags>]
 
 Flags:
       --help         Show context-sensitive help (also try --help-long and --help-man).
-  -p, --port="8000"  The port to listen on
+  -p, --port="8000"  The port to listen on.
 ```
 
 Use [Postman](https://www.getpostman.com/) (or similar) to send an HTTP GET, POST, PUT, or DELETE request to the server.
