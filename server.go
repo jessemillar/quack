@@ -1,9 +1,10 @@
 package main
 
 import (
-	"flag"
 	"log"
 	"net/http"
+
+	kingpin "gopkg.in/alecthomas/kingpin.v2"
 
 	"github.com/jessemillar/health"
 	"github.com/jessemillar/quack/quack"
@@ -16,8 +17,8 @@ func main() {
 	router.Pre(middleware.RemoveTrailingSlash())
 	router.Use(middleware.CORS())
 
-	port := flag.String("p", "8000", "port to serve on")
-	flag.Parse()
+	port := kingpin.Flag("port", "The port to listen on.").Short('p').Default("8000").String()
+	kingpin.Parse()
 
 	router.GET("/", echo.WrapHandler(http.HandlerFunc(quack.Quack)))
 	router.GET("/health", echo.WrapHandler(http.HandlerFunc(health.Check)))
