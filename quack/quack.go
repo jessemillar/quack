@@ -4,6 +4,7 @@ import (
 	"log"
 	"net/http"
 	"net/http/httputil"
+	"os"
 
 	"github.com/jessemillar/jsonresp"
 )
@@ -16,5 +17,7 @@ func Quack(writer http.ResponseWriter, request *http.Request) {
 	}
 
 	jsonresp.New(writer, http.StatusOK, "QUACK QUACK QUACK QUACK QUACK")
+
+	log.SetOutput(os.Stdout)
 	log.Printf("%s\n\n", dump)
 }

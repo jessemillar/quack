@@ -1,7 +1,6 @@
 package main
 
 import (
-	"log"
 	"net/http"
 
 	kingpin "gopkg.in/alecthomas/kingpin.v2"
@@ -27,8 +26,6 @@ func main() {
 	router.POST("/quack", echo.WrapHandler(http.HandlerFunc(quack.Quack)))
 	router.PUT("/quack", echo.WrapHandler(http.HandlerFunc(quack.Quack)))
 	router.DELETE("/quack", echo.WrapHandler(http.HandlerFunc(quack.Quack)))
-
-	log.Printf("Listening on HTTP port: %s\n", *port)
 
 	server := http.Server{
 		Addr:           ":" + *port,
