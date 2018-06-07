@@ -3,7 +3,7 @@
 
 ## Installation
 ```
-go get github.com/jessemillar/quack
+go get -v -u github.com/jessemillar/quack
 ```
 
 ## Usage
