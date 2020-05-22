@@ -1,0 +1,10 @@
+{
+  "name": "Quack",
+  "description": "A tiny Go web server for testing endpoints inside networks that don't allow RequestBin",
+  "repository": "https://github.com/jessemillar/quack",
+  "buildpacks": [
+    {
+      "url": "heroku/go"
+    }
+  ]
+}
