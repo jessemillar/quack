@@ -2,6 +2,7 @@ package main
 
 import (
 	"net/http"
+	"os"
 
 	kingpin "gopkg.in/alecthomas/kingpin.v2"
 
@@ -18,6 +19,10 @@ func main() {
 
 	port := kingpin.Flag("port", "The port to listen on.").Short('p').Default("8000").String()
 	kingpin.Parse()
+
+	if len(os.Getenv("PORT")) > 0 {
+		port = os.Getenv("PORT")
+	}
 
 	router.GET("/", echo.WrapHandler(http.HandlerFunc(quack.Quack)))
 	router.GET("/health", echo.WrapHandler(http.HandlerFunc(health.Check)))
