@@ -21,7 +21,8 @@ func main() {
 	kingpin.Parse()
 
 	if len(os.Getenv("PORT")) > 0 {
-		port = os.Getenv("PORT")
+		envPort := os.Getenv("PORT")
+		port = &envPort
 	}
 
 	router.GET("/", echo.WrapHandler(http.HandlerFunc(quack.Quack)))

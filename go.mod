@@ -12,6 +12,7 @@ require (
 	github.com/labstack/gommon v0.2.2-0.20170712191137-779b8a8b9850
 	github.com/mattn/go-colorable v0.0.10-0.20170811043054-6df6d4d004b6
 	github.com/mattn/go-isatty v0.0.2
+	github.com/valyala/bytebufferpool v1.0.0 // indirect
 	github.com/valyala/fasttemplate v0.0.0-20170224212429-dcecefd839c4
 	golang.org/x/crypto v0.0.0-20170808112155-b176d7def5d7
 	golang.org/x/sys v0.0.0-20170814191752-2d3e384235de
